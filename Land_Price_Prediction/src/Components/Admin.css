@@ -1,0 +1,106 @@
+/* Admin.css */
+
+/* Container for centering the form */
+.admin-login-container {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Section styling */
+.admin-login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Card styling */
+.admin-login-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 400px; /* Reduced width */
+    width: 100%;
+    text-align: left; /* Align text to the left */
+}
+
+/* Heading styling */
+.admin-login-heading {
+    font-size: 1.5rem; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Description styling */
+.admin-login-description {
+    color: #555;
+    font-size: 1rem; /* Slightly smaller font size */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Input group styling */
+.admin-login-input-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Label styling */
+.admin-login-label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    text-align: left; /* Align label text to the left */
+}
+
+/* Input field styling */
+.admin-login-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus styling */
+.admin-login-input:focus {
+    border-color: #1b7fd1;
+    box-shadow: 0 0 5px rgba(123, 255, 0, 0.3);
+    outline: none;
+}
+
+/* Button styling */
+.admin-login-button {
+    background-color: #1b7fd1;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Slightly smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+/* Button hover styling */
+.admin-login-button:hover {
+    background-color: #1b7fd1;
+    transform: scale(1.05);
+}
+
+/* Error message styling */
+.admin-login-error {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: bold;
+}

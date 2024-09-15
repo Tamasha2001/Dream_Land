@@ -1,0 +1,67 @@
+.footer {
+  background-color: #b8bcc2;
+  padding: 20px 0;
+  text-align: center;
+  color: #080757;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.email, .phone {
+  margin-left: 5px;
+}
+
+.socialMedia {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Social Media Button Styles */
+.socialLink {
+  margin: 0 10px;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Social Media Icon Animation */
+.socialLink i {
+  font-size: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation for hover effect */
+.socialLink:hover i {
+  transform: scale(1.2); /* Scale up the icon */
+  color: #becfd6; /* Change color on hover */
+}
+
+/* Optional: Add a pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.socialLink:hover i {
+  animation: pulse 1s infinite; /* Pulse effect */
+}

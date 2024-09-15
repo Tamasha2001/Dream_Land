@@ -1,0 +1,120 @@
+/* ViewAdvertisements.css */
+
+/* Hero Section Style */
+.hero {
+    background: url('../assets/search2.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    
+  }
+  
+  .hero-content {
+    padding-top: 70px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .hero h5 {
+    font-size: 1.5rem;
+  }
+
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /*.search-input {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    width: 300px;
+    background-color: #ffffff;
+  }*/
+  
+  .search-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding-left:15px;
+    padding-right: 80px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cta-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Card Style */
+  .land-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .land-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .img-fluid {
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Error Message Style */
+  .text-danger {
+    font-size: 1rem;
+    color: #dc3545;
+    margin-top: 20px;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-input {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .search-bar-container {
+      flex-direction: column;
+    }
+  
+    .search-btn {
+      margin-top: 10px;
+    }
+  }
+  

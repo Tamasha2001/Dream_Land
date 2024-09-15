@@ -1,0 +1,103 @@
+/* AdminSidebar.css */
+
+/* Sidebar base styling */
+.admin-sidebar {
+  background-color: #343a40; /* Dark gray background */
+  color: #f8f9fa; /* Light text color */
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Keeps the sidebar fixed on the left */
+}
+
+/* Sidebar header styling */
+.sidebar-header {
+  background-color: #007bff; /* Primary blue color */
+  text-align: center;
+  padding: 20px 10px;
+  color: #ffffff;
+}
+
+.sidebar-header h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sidebar-header p {
+  font-size: 0.9rem;
+  margin: 5px 0 0 0;
+}
+
+/* Navigation item list */
+.nav {
+  padding-left: 0;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+/* Link styling */
+.nav-link {
+  font-size: 1rem;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  color: #f8f9fa;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+}
+
+/* Active link styling */
+.nav-link.active {
+  background-color: #6c757d; /* Darker shade for active link */
+  color: #ffffff;
+}
+
+/* Icon styling */
+.nav-link i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+/* Footer logout link */
+.nav-item.mt-auto {
+  margin-top: auto;
+}
+
+.nav-link.text-white {
+  color: #f8f9fa;
+}
+
+/* Divider line */
+hr.border-light {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar-header {
+    padding: 10px 0;
+  }
+}
+
+.custom-margin {
+  margin-top: 60px; /* Adjust this value as needed */
+  padding: 3rem;
+}

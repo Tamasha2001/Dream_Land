@@ -1,0 +1,381 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navLinks li a:hover {
+  color: #1b7fd1;
+}
+
+/* Home */
+.home {
+  margin-top: 1px;
+  height: 100vh;
+  height: 600px;
+  width: auto;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url('../assets/land1.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  color: #fff;
+  padding-left: 50px;
+}
+
+.hero {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.ctaButton {
+  background-color: #1b7fd1;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.ctaButton:hover {
+  background-color: #1b7fd1;
+}
+
+/* About Us Section */
+.about {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.aboutText {
+  flex: 1;
+  text-align: left;
+}
+
+.aboutText h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.aboutText p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.aboutImage {
+  flex: 1;
+  background: url('../assets/aboutUs.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Our Services Section */
+.services {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.serviceCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.serviceCard {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.serviceIcon {
+  font-size: 50px;
+  color: #357abd;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+
+
+/* Gallery Section */
+.gallery {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galleryItem {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galleryItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.galleryImageSale,
+.galleryImageRent,
+.galleryImageDevelopment,
+.galleryImageAuction {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.galleryImageSale:hover,
+.galleryImageRent:hover,
+.galleryImageDevelopment:hover,
+.galleryImageAuction:hover {
+  transform: scale(1.1);
+}
+
+/* Image Sources */
+.galleryImageSale {
+  background-image: url('../assets/sale.jpeg');
+}
+
+.galleryImageRent {
+  background-image: url('../assets/rent.jpeg');
+}
+
+.galleryImageDevelopment {
+  background-image: url('../assets/report.jpg');
+}
+
+.galleryImageAuction {
+  background-image: url('../assets/auction.jpeg');
+}
+
+.galleryText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.galleryItem:hover .galleryText {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Contact Us Section */
+.contactSection {
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensure both columns stretch to the same height */
+  gap: 30px; /* Space between the two columns */
+}
+
+.chartWrapper {
+  flex: 1;
+  background-image: url('../assets/Land-Chart.png'); /* Update with the correct path */
+  background-size: cover; /* Scale image to cover container */
+  background-position: center; /* Center image */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 400px; /* Set the height to match the form */
+}
+
+.contactWrapper {
+  flex: 1;
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 400px; /* Set the height to match the chart */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+}
+
+.contactWrapper h2 {
+  font-size: 24px; /* Smaller font size for the heading */
+  margin-bottom: 20px;
+  color: #333; /* Darker color for heading */
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 2px;
+}
+
+
+.contactWrapper p {
+  font-size: 16px; /* Slightly smaller font size */
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter color for text */
+  text-align: center;
+}
+
+.contactForm {
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Reduced gap between form fields */
+  height: 100%; /* Fill the height of the contactWrapper */
+}
+
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.formLabel {
+  margin-bottom: 5px;
+  font-size: 14px; /* Smaller font size for labels */
+  color: #555; /* Slightly lighter color for labels */
+}
+
+.formInput, .formTextarea {
+  padding: 10px; /* Slightly reduced padding */
+  font-size: 14px; /* Smaller font size for inputs */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa; /* Very light background color for inputs */
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 60px; /* Reduced minimum height */
+}
+
+.formButton {
+  background-color: #357abd; /* Orange background */
+  color: #fff;
+  padding: 10px; /* Reduced padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Slightly smaller font size */
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.formButton:hover {
+  background-color: #357abd; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight scale effect for button */
+}
+

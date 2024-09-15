@@ -1,0 +1,47 @@
+/* AdminHeader.css */
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-bottom: 2px solid #444;
+}
+
+.admin-header-left h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.admin-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.admin-header-item {
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin-header-item i {
+  font-size: 1.2rem;
+}
+
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.admin-header-item:last-child {
+  margin-right: 0;
+}
